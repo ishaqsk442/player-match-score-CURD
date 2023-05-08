@@ -1,0 +1,46 @@
+GET http://localhost:3000/players/
+
+###
+
+GET http://localhost:3000/players/1/
+###
+
+POST http://localhost:3000/districts/
+Content-Type: application/json
+
+{
+  "districtName": "Bagalkot",
+  "stateId": 3,
+  "cases": 2323,
+  "cured": 2000,
+  "active": 315,
+  "deaths": 8
+}
+
+###
+
+
+GET http://localhost:3000/matches/4/
+
+###
+
+DELETE http://localhost:3000/districts/3/
+###
+PUT http://localhost:3000/players/1/
+Content-Type: application/json
+
+{
+  "playerName": "Raju"
+}
+
+###
+
+GET http://localhost:3000/players/1/matches/
+
+
+###
+GET http://localhost:3000/matches/10/players/
+
+###
+
+GET http://localhost:3000/players/1/playerScores/
